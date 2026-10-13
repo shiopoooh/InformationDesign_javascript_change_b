@@ -1,0 +1,61 @@
+:root {
+    --color-main: #ffffff;
+    --color-sub: #e0e0e0;
+    --color-text: #000000;
+}
+
+:root[data-theme="light"] {
+    --color-main: #ffffff;
+    --color-sub: #e0e0e0;
+    --color-text: #000000;
+}
+
+:root[data-theme="dark"] {
+    --color-main: #121212;
+    --color-sub: #333333;
+    --color-text: #ffffff;
+}
+
+:root[data-theme="custom1"] {
+    --color-main: #e0f7fa;
+    --color-sub: #b2ebf2;
+    --color-text: #006064;
+}
+
+:root[data-theme="custom2"] {
+    --color-main: #fff3e0;
+    --color-sub: #ffe0b2;
+    --color-text: #e65100;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+}
+
+body {
+    background-color: var(--color-main);
+    color: var(--color-text);
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+p {
+    background-color: var(--color-sub);
+    padding: 10px;
+}
+
+.header {
+    background-color: var(--color-main); /* --main-color から修正 */
+    color: var(--color-text);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-sub);
+}
+
+.black {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
